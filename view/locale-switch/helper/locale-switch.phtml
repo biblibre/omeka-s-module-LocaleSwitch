@@ -1,0 +1,11 @@
+<?php if (!empty($locales)): ?>
+    <ul class="locale-switch">
+        <?php foreach ($locales as $locale => $description): ?>
+            <?php if ($locale === $currentLocale): ?>
+                <li class="active"><span><?php echo htmlspecialchars($description); ?></span></li>
+            <?php else: ?>
+                <li><a href="<?php echo $this->url('site/set-locale', [], ['query' => ['locale' => $locale, 'redirect_uri' => $_SERVER['REQUEST_URI']]], true); ?>"><?php echo htmlspecialchars($description); ?></a></li>
+            <?php endif; ?>
+        <?php endforeach; ?>
+    </ul>
+<?php endif; ?>
