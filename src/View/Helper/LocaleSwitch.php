@@ -2,8 +2,8 @@
 
 namespace LocaleSwitch\View\Helper;
 
-use Zend\Validator\AbstractValidator;
-use Zend\View\Helper\AbstractHelper;
+use Laminas\Validator\AbstractValidator;
+use Laminas\View\Helper\AbstractHelper;
 
 class LocaleSwitch extends AbstractHelper
 {

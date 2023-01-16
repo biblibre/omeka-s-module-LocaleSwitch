@@ -16,7 +16,7 @@ return [
             'site' => [
                 'child_routes' => [
                     'set-locale' => [
-                        'type' => \Zend\Router\Http\Literal::class,
+                        'type' => \Laminas\Router\Http\Literal::class,
                         'options' => [
                             'route' => '/set-locale',
                             'defaults' => [
@@ -33,7 +33,7 @@ return [
     'service_manager' => [
         'invokables' => [
             'LocaleSwitch\MvcListeners' => Mvc\MvcListeners::class,
-        ]
+        ],
     ],
     'view_helpers' => [
         'invokables' => [

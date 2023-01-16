@@ -2,8 +2,8 @@
 
 namespace LocaleSwitch\Controller\Site;
 
-use Zend\Mvc\Controller\AbstractActionController;
-use Zend\Session\Container;
+use Laminas\Mvc\Controller\AbstractActionController;
+use Laminas\Session\Container;
 
 class IndexController extends AbstractActionController
 {

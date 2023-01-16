@@ -2,11 +2,11 @@
 
 namespace LocaleSwitch\Mvc;
 
-use Zend\EventManager\AbstractListenerAggregate;
-use Zend\EventManager\EventManagerInterface;
-use Zend\Mvc\MvcEvent;
-use Zend\Session\Container;
-use Zend\Validator\AbstractValidator;
+use Laminas\EventManager\AbstractListenerAggregate;
+use Laminas\EventManager\EventManagerInterface;
+use Laminas\Mvc\MvcEvent;
+use Laminas\Session\Container;
+use Laminas\Validator\AbstractValidator;
 
 class MvcListeners extends AbstractListenerAggregate
 {
